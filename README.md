@@ -16,8 +16,8 @@ Some ```.m``` files were individually made for each question such as:
 - ```Question5.m```
 - ```Question6.m```
 
-The file ```TCLab_openloop_modified.m``` was used to answer question 1 and is only a modification (as the name indicates) of the file ```TCLab_openloop.m``` given by the professors.
+The file ```TCLab_openloop_modified.m``` was used to answer Question 1 and is only a modification (as the name indicates) of the file ```TCLab_openloop.m``` given by the professors.
 
-The file ```tclabsim.m``` corresponds to the function asked to be developed in question 4.
+The file ```tclabsim.m``` corresponds to the function asked to be developed in Question 4.
 
 The ```.mat``` files contain variables used in the ```.m``` files and the code to load these ```.mat``` files is written in the ```.m``` files, when needed.
