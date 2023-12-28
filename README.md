@@ -14,6 +14,7 @@ Some ```.m``` files were individually made for each question such as:
 - ```Question2.m```
 - ```Question3.m```
 - ```Question5.m```
+- ```Question6.m```
 
 The file ```TCLab_openloop_modified.m``` was used to answer question 1 and is only a modification (as the name indicates) of the file ```TCLab_openloop.m``` given by the professors.
 
