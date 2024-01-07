@@ -25,6 +25,7 @@ tau_opt = p_opt(3);
 
 % Load experimental data obtained with the new profile
 load('openloop_data_2.mat');
+y = y(1,:);
 x0 = y(1,1);
 
 % Get simulated data with optimal parameters and new profile
@@ -35,7 +36,7 @@ J = least_square_error(y, y_sim_opt);
 fprintf("Cost: %f\n", J);
 
 % Plot graph
-plot(t,y(1,:)); %Plot real temperature graph
+plot(t,y); %Plot real temperature graph
 hold on;
 plot(t,y_sim_opt); %Plot simulated temperature graph
 

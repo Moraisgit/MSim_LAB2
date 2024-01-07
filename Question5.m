@@ -113,7 +113,7 @@ title('\textbf{Surface Plot of Cost Function - Fixed $\alpha$}', ...
 %                      Function to calculate the cost
 %==========================================================================
 function y = least_square_error (y_real, y_sim)
-    % Thecost
+    % The cost
     J = 0;
 
     for ii = 1:length(y_sim)
