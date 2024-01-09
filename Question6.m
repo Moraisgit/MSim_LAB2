@@ -23,10 +23,20 @@ U_opt = p_opt(1);
 alpha_opt = p_opt(2);
 tau_opt = p_opt(3);
 
+if exitflag > 0
+    fprintf('\nFitted parameters:\n')
+    fprintf('\tU = %.3f W/m^2-K\n',U_opt)
+    fprintf('\talpha = %.5f W/%%\n',alpha_opt)
+    fprintf('\ttau = %.3f s\n',tau_opt)
+    fprintf('Optimal cost: J* = %.3f\n',J_opt)
+else
+    warning('Minimization unsuccessful.')
+end
+
 % Load experimental data obtained with the new profile
 load('openloop_data_2.mat');
 y = y(1,:);
-x0 = y(1,1);
+x0 = y(1);
 
 % Get simulated data with optimal parameters and new profile
 y_sim_opt = tclabsim(t,x0,u,p_opt);

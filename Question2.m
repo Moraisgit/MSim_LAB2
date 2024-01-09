@@ -6,6 +6,9 @@ clc;
 load('openloop_data_1.mat');
 load('constants.mat');
 
+%Define initial condition
+Ta = y(1,1);
+
 %Time of simulation and sample time
 simulation_time = t(end);
 sample_time = t(2);

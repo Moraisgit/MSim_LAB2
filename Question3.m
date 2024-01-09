@@ -1,10 +1,13 @@
-clear;
-close all;
-clc;
+clear
+close all
+clc
 
 %Load the data needed
 load('openloop_data_1.mat');
 load('constants.mat');
+
+%Define initial condition
+Ta = y(1,1);
 
 %Time of simulation and sample time
 simulation_time = t(end);
@@ -23,7 +26,7 @@ plot(out.tout, out.Ts_simulated); %Plot simulated temperature graph
 %Add elements to the graph
 grid on;
 xlabel('Time [s]', "Interpreter", "latex", "fontsize", 12);
-ylabel('Temperature [$^{\circ}$C]', ...
+ylabel('$T_{s}$ [$^{\circ}$C]', ...
     "Interpreter", "latex", "fontsize", 12);
 legend('Real', 'Simulated',"Interpreter", "latex", "FontSize", 12, ...
     'Location', 'southeast');

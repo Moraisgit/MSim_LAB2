@@ -23,9 +23,6 @@ U_opt = p_opt(1);
 alpha_opt = p_opt(2);
 tau_opt = p_opt(3);
 
-% % Get simulated data with optimal parameters
-% y_sim_opt = tclabsim(t,x0,u,p_opt);
-
 if exitflag > 0
     fprintf('\nFitted parameters:\n')
     fprintf('\tU = %.3f W/m^2-K\n',U_opt)
